@@ -7,7 +7,7 @@ DATE=$(date +"%F_%H-%M-%S")
 backup_file="$backup_dir/${db_name}_$date.sql"
 
 #create a backup
-mysqldump -u root -pHimanshu@423 $db_name > $backup_file
+mysqldump -u root -pHimansh3 $db_name > $backup_file
 
 #optional: delete backups older than 7 days
 find $backup_dir -type f -name "*.sql" -mtime +7 -exec rm {} \;
